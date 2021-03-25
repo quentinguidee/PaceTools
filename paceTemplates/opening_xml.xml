@@ -1,0 +1,2508 @@
+<com.hemmis.mrw.pace.model.skin.Opening id="1">
+  <state>UNCHANGED</state>
+  <shortDescription>Ouverture 1</shortDescription>
+  <openingSkin isCut="true"/>
+  <opaqueElement class="com.hemmis.mrw.pace.model.skin.Opening$OpeningOpaqueElementSituationReferenceProperty" id="2" v="2">
+    <owner class="com.hemmis.mrw.pace.model.skin.Opening" reference="1"/>
+    <INITIAL class="com.hemmis.mrw.pace.model.skin.Wall" isCut="true" uniqueReference="M1"/>
+  </opaqueElement>
+  <transparentElement class="com.hemmis.mrw.pace.model.skin.Opening$OpeningTransparentElementSituationReferenceProperty" id="3" v="2">
+    <owner class="com.hemmis.mrw.pace.model.skin.Opening" reference="1"/>
+    <INITIAL class="com.hemmis.mrw.pace.model.skin.TransparentElement" isCut="true" uniqueReference="F1"/>
+  </transparentElement>
+  <heightManually id="4" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </heightManually>
+  <height id="5" v="2">
+    <INITIAL/>
+  </height>
+  <heightValidationOk id="6" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </heightValidationOk>
+  <widthManually id="7" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </widthManually>
+  <width id="8" v="2">
+    <INITIAL/>
+  </width>
+  <widthValidationOk id="9" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </widthValidationOk>
+  <number id="10" v="2">
+    <INITIAL/>
+  </number>
+  <surfaceManually id="11" v="2">
+    <INITIAL class="java.lang.Boolean">true</INITIAL>
+  </surfaceManually>
+  <surface id="12" v="2">
+    <INITIAL class="java.math.BigDecimal">1.00</INITIAL>
+  </surface>
+  <orientationManually id="13" v="2">
+    <INITIAL class="java.lang.Boolean">true</INITIAL>
+  </orientationManually>
+  <orientation id="14" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.enums.Orientation">N</INITIAL>
+  </orientation>
+  <slopeAngleManually id="15" v="2">
+    <INITIAL class="java.lang.Boolean">true</INITIAL>
+  </slopeAngleManually>
+  <slopeAngle id="16" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.enums.Angle">DEGREES_90</INITIAL>
+  </slopeAngle>
+  <obstructionAngle id="17" v="2">
+    <INITIAL/>
+  </obstructionAngle>
+  <overhangAngle id="18" v="2">
+    <INITIAL/>
+  </overhangAngle>
+  <hasSecondOverhangAngle id="19" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </hasSecondOverhangAngle>
+  <secondOverhangAngle id="20" v="2">
+    <INITIAL/>
+  </secondOverhangAngle>
+  <projectionLeftAngle id="21" v="2">
+    <INITIAL/>
+  </projectionLeftAngle>
+  <projectionRightAngle id="22" v="2">
+    <INITIAL/>
+  </projectionRightAngle>
+  <hasSunProtection id="23" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </hasSunProtection>
+  <sunProtectionKind id="24" v="2">
+    <INITIAL/>
+  </sunProtectionKind>
+  <sunProtectionControl id="25" v="2">
+    <INITIAL/>
+  </sunProtectionControl>
+  <uvalueWithoutShutterManually id="26" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="27" v="2">
+      <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+      <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+    </INITIAL>
+  </uvalueWithoutShutterManually>
+  <uvalueWithoutShutter id="28" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="29" v="2">
+      <CURRENT__STATE class="java.math.BigDecimal">3.06</CURRENT__STATE>
+      <SCENARIO__2 class="java.math.BigDecimal">3.06</SCENARIO__2>
+    </INITIAL>
+  </uvalueWithoutShutter>
+  <uvalueShutterManually id="30" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="31" v="2">
+      <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+      <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+    </INITIAL>
+  </uvalueShutterManually>
+  <uvalueShutter id="32" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="33" v="2">
+      <CURRENT__STATE class="java.math.BigDecimal">2.458226221079692</CURRENT__STATE>
+      <SCENARIO__2 class="java.math.BigDecimal">2.458226221079692</SCENARIO__2>
+    </INITIAL>
+  </uvalueShutter>
+  <uvalueManually id="34" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="35" v="2">
+      <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+      <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+    </INITIAL>
+  </uvalueManually>
+  <uvalue id="36" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="37" v="2">
+      <CURRENT__STATE class="java.math.BigDecimal">3.06</CURRENT__STATE>
+      <SCENARIO__2 class="java.math.BigDecimal">3.06</SCENARIO__2>
+    </INITIAL>
+  </uvalue>
+  <uvalueSurfaceManually id="38" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="39" v="2">
+      <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+      <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+    </INITIAL>
+  </uvalueSurfaceManually>
+  <uvalueSurface id="40" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="41" v="2">
+      <CURRENT__STATE class="java.math.BigDecimal">3.0600</CURRENT__STATE>
+      <SCENARIO__2 class="java.math.BigDecimal">3.0600</SCENARIO__2>
+    </INITIAL>
+  </uvalueSurface>
+  <sunProtectionUseFactorHeatManually id="42" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </sunProtectionUseFactorHeatManually>
+  <sunProtectionUseFactorHeat id="43" v="2">
+    <INITIAL class="java.math.BigDecimal">0</INITIAL>
+  </sunProtectionUseFactorHeat>
+  <sunProtectionUseFactorOverHeatManually id="44" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </sunProtectionUseFactorOverHeatManually>
+  <sunProtectionUseFactorOverHeat id="45" v="2">
+    <INITIAL class="java.math.BigDecimal">0</INITIAL>
+  </sunProtectionUseFactorOverHeat>
+  <sunProtectionUseFactorCoolManually id="46" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </sunProtectionUseFactorCoolManually>
+  <sunProtectionUseFactorCool id="47" v="2">
+    <INITIAL class="java.math.BigDecimal">0</INITIAL>
+  </sunProtectionUseFactorCool>
+  <simpleUnshadManually id="48" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="49" v="2">
+      <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+      <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+    </INITIAL>
+  </simpleUnshadManually>
+  <detailedUnshadManually id="50" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="51" v="2">
+      <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+      <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+    </INITIAL>
+  </detailedUnshadManually>
+  <detailedSecondUnshadManually id="52" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="53" v="2">
+      <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+      <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+    </INITIAL>
+  </detailedSecondUnshadManually>
+  <hasFinalSolarGainManually id="54" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="55" v="2">
+      <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+      <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+    </INITIAL>
+  </hasFinalSolarGainManually>
+  <hasFinalSolarGain id="56" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="57" v="2">
+      <CURRENT__STATE class="java.lang.Boolean">true</CURRENT__STATE>
+      <SCENARIO__2 class="java.lang.Boolean">true</SCENARIO__2>
+    </INITIAL>
+  </hasFinalSolarGain>
+  <monthlySolarResults class="tree-map" id="58">
+    <no-comparator/>
+    <entry>
+      <com.hemmis.util.Month>JANUARY</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="59">
+        <opening reference="1"/>
+        <month>JANUARY</month>
+        <simpleUnshad id="60" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="61" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">20.638</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">20.638</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="62" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="63" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="64" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="65" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="66" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="67" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="68" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="69" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="70" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="71" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="72" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="73" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="74" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="75" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="76" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="77" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="78" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="79" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="80" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="81" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="82" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="83" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="84" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="85" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="86" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="87" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="88" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="89" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="90" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="91" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="92" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="93" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="94" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="95" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="96" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="97" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="98" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="99" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="100" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="101" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="102" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="103" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="104" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="105" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="106" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="107" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="108" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="109" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="110" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="111" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="112" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="113" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="114" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="115" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="116" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="117" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="118" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="119" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="120" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="121" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>FEBRUARY</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="122">
+        <opening reference="1"/>
+        <month>FEBRUARY</month>
+        <simpleUnshad id="123" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="124" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">34.46</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">34.46</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="125" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="126" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="127" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="128" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="129" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="130" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="131" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="132" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="133" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="134" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="135" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="136" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="137" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="138" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="139" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="140" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="141" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="142" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="143" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="144" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="145" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="146" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="147" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="148" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="149" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="150" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="151" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="152" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="153" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="154" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="155" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="156" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="157" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="158" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="159" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="160" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="161" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="162" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="163" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="164" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="165" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="166" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="167" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="168" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="169" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="170" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="171" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="172" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="173" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="174" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="175" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="176" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="177" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="178" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="179" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="180" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="181" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="182" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="183" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="184" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>MARCH</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="185">
+        <opening reference="1"/>
+        <month>MARCH</month>
+        <simpleUnshad id="186" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="187" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">65.36</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">65.36</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="188" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="189" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="190" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="191" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="192" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="193" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="194" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="195" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="196" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="197" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="198" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="199" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="200" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="201" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="202" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="203" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="204" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="205" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="206" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="207" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="208" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="209" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="210" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="211" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="212" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="213" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="214" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="215" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="216" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="217" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="218" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="219" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="220" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="221" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="222" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="223" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="224" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="225" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="226" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="227" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="228" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="229" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="230" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="231" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="232" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="233" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="234" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="235" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="236" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="237" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="238" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="239" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="240" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="241" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="242" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="243" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="244" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="245" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="246" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="247" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>APRIL</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="248">
+        <opening reference="1"/>
+        <month>APRIL</month>
+        <simpleUnshad id="249" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="250" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">94.826</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">94.826</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="251" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="252" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="253" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="254" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="255" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="256" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="257" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="258" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="259" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="260" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="261" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="262" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="263" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="264" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="265" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="266" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="267" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="268" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="269" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="270" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="271" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="272" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="273" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="274" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="275" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="276" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="277" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="278" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="279" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="280" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="281" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="282" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="283" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="284" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="285" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="286" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="287" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="288" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="289" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="290" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="291" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="292" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="293" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="294" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="295" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="296" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="297" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="298" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="299" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="300" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="301" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="302" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="303" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="304" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="305" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="306" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="307" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="308" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="309" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="310" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>MAY</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="311">
+        <opening reference="1"/>
+        <month>MAY</month>
+        <simpleUnshad id="312" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="313" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">128.704</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">128.704</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="314" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="315" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="316" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="317" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="318" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="319" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="320" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="321" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="322" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="323" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="324" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="325" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="326" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="327" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="328" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="329" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="330" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="331" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="332" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="333" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="334" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="335" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="336" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="337" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="338" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="339" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="340" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="341" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="342" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="343" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="344" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="345" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="346" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="347" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="348" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="349" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="350" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="351" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="352" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="353" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="354" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="355" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="356" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="357" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="358" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="359" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="360" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="361" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="362" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="363" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="364" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="365" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="366" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="367" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="368" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="369" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="370" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="371" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="372" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="373" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>JUNE</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="374">
+        <opening reference="1"/>
+        <month>JUNE</month>
+        <simpleUnshad id="375" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="376" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">143.936</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">143.936</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="377" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="378" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="379" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="380" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="381" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="382" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="383" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="384" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="385" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="386" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="387" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="388" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="389" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="390" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="391" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="392" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="393" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="394" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="395" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="396" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="397" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="398" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="399" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="400" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="401" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="402" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="403" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="404" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="405" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="406" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="407" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="408" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="409" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="410" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="411" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="412" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="413" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="414" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="415" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="416" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="417" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="418" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="419" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="420" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="421" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="422" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="423" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="424" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="425" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="426" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="427" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="428" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="429" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="430" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="431" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="432" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="433" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="434" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="435" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="436" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>JULY</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="437">
+        <opening reference="1"/>
+        <month>JULY</month>
+        <simpleUnshad id="438" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="439" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">141.872</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">141.872</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="440" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="441" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="442" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="443" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="444" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="445" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="446" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="447" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="448" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="449" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="450" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="451" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="452" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="453" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="454" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="455" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="456" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="457" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="458" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="459" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="460" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="461" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="462" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="463" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="464" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="465" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="466" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="467" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="468" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="469" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="470" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="471" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="472" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="473" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="474" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="475" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="476" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="477" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="478" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="479" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="480" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="481" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="482" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="483" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="484" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="485" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="486" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="487" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="488" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="489" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="490" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="491" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="492" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="493" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="494" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="495" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="496" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="497" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="498" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="499" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>AUGUST</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="500">
+        <opening reference="1"/>
+        <month>AUGUST</month>
+        <simpleUnshad id="501" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="502" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">115.814</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">115.814</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="503" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="504" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="505" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="506" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="507" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="508" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="509" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="510" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="511" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="512" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="513" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="514" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="515" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="516" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="517" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="518" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="519" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="520" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="521" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="522" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="523" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="524" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="525" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="526" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="527" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="528" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="529" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="530" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="531" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="532" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="533" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="534" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="535" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="536" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="537" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="538" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="539" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="540" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="541" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="542" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="543" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="544" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="545" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="546" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="547" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="548" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="549" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="550" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="551" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="552" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="553" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="554" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="555" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="556" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="557" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="558" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="559" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="560" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="561" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="562" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>SEPTEMBER</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="563">
+        <opening reference="1"/>
+        <month>SEPTEMBER</month>
+        <simpleUnshad id="564" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="565" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">80.929</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">80.929</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="566" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="567" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="568" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="569" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="570" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="571" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="572" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="573" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="574" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="575" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="576" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="577" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="578" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="579" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="580" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="581" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="582" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="583" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="584" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="585" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="586" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="587" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="588" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="589" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="590" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="591" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="592" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="593" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="594" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="595" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="596" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="597" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="598" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="599" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="600" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="601" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="602" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="603" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="604" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="605" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="606" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="607" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="608" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="609" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="610" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="611" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="612" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="613" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="614" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="615" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="616" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="617" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="618" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="619" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="620" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="621" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="622" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="623" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="624" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="625" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>OCTOBER</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="626">
+        <opening reference="1"/>
+        <month>OCTOBER</month>
+        <simpleUnshad id="627" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="628" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">50.547</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">50.547</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="629" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="630" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="631" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="632" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="633" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="634" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="635" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="636" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="637" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="638" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="639" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="640" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="641" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="642" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="643" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="644" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="645" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="646" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="647" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="648" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="649" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="650" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="651" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="652" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="653" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="654" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="655" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="656" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="657" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="658" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="659" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="660" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="661" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="662" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="663" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="664" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="665" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="666" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="667" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="668" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="669" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="670" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="671" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="672" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="673" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="674" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="675" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="676" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="677" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="678" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="679" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="680" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="681" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="682" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="683" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="684" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="685" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="686" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="687" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="688" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>NOVEMBER</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="689">
+        <opening reference="1"/>
+        <month>NOVEMBER</month>
+        <simpleUnshad id="690" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="691" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">24.879</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">24.879</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="692" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="693" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="694" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="695" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="696" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="697" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="698" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="699" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="700" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="701" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="702" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="703" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="704" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="705" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="706" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="707" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="708" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="709" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="710" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="711" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="712" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="713" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="714" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="715" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="716" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="717" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="718" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="719" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="720" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="721" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="722" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="723" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="724" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="725" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="726" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="727" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="728" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="729" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="730" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="731" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="732" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="733" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="734" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="735" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="736" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="737" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="738" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="739" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="740" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="741" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="742" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="743" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="744" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="745" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="746" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="747" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="748" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="749" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="750" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="751" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+    <entry>
+      <com.hemmis.util.Month>DECEMBER</com.hemmis.util.Month>
+      <com.hemmis.mrw.pace.model.skin.MonthlySolarResult id="752">
+        <opening reference="1"/>
+        <month>DECEMBER</month>
+        <simpleUnshad id="753" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="754" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">16.047</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">16.047</SCENARIO__2>
+          </INITIAL>
+        </simpleUnshad>
+        <detailedUnshad id="755" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="756" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedUnshad>
+        <detailedSecondUnshad id="757" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="758" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </detailedSecondUnshad>
+        <simpleSunProtectionReductionFactorManually id="759" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="760" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactorManually>
+        <simpleSunProtectionReductionFactor id="761" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="762" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </simpleSunProtectionReductionFactor>
+        <detailedSunProtectionReductionFactorManually id="763" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="764" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactorManually>
+        <detailedSunProtectionReductionFactor id="765" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="766" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">1</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">1</SCENARIO__2>
+          </INITIAL>
+        </detailedSunProtectionReductionFactor>
+        <shadHeatManually id="767" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="768" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadHeatManually>
+        <shadHeat id="769" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="770" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadHeat>
+        <solarFactorHeatManually id="771" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="772" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeatManually>
+        <solarFactorHeat id="773" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="774" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorHeat>
+        <solarGainHeatManually id="775" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="776" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainHeatManually>
+        <solarGainHeat id="777" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="778" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainHeat>
+        <finalSolarGainHeatManually id="779" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="780" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainHeatManually>
+        <finalSolarGainHeat id="781" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="782" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainHeat>
+        <shadOverHeatManually id="783" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="784" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadOverHeatManually>
+        <shadOverHeat id="785" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="786" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadOverHeat>
+        <solarFactorOverHeatManually id="787" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="788" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeatManually>
+        <solarFactorOverHeat id="789" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="790" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorOverHeat>
+        <solarGainOverHeatManually id="791" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="792" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainOverHeatManually>
+        <solarGainOverHeat id="793" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="794" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainOverHeat>
+        <finalSolarGainOverHeatManually id="795" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="796" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainOverHeatManually>
+        <finalSolarGainOverHeat id="797" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="798" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainOverHeat>
+        <shadCoolManually id="799" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="800" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </shadCoolManually>
+        <shadCool id="801" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="802" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </shadCool>
+        <solarFactorCoolManually id="803" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="804" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCoolManually>
+        <solarFactorCool id="805" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="806" v="2">
+            <CURRENT__STATE class="java.math.BigDecimal">0.675</CURRENT__STATE>
+            <SCENARIO__2 class="java.math.BigDecimal">0.675</SCENARIO__2>
+          </INITIAL>
+        </solarFactorCool>
+        <solarGainCoolManually id="807" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="808" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </solarGainCoolManually>
+        <solarGainCool id="809" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="810" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </solarGainCool>
+        <finalSolarGainCoolManually id="811" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="812" v="2">
+            <CURRENT__STATE class="java.lang.Boolean">false</CURRENT__STATE>
+            <SCENARIO__2 class="java.lang.Boolean">false</SCENARIO__2>
+          </INITIAL>
+        </finalSolarGainCoolManually>
+        <finalSolarGainCool id="813" v="2">
+          <INITIAL class="com.hemmis.mrw.pace.model.ObservableSpecProperty" id="814" v="2">
+            <CURRENT__STATE/>
+            <SCENARIO__2/>
+          </INITIAL>
+        </finalSolarGainCool>
+      </com.hemmis.mrw.pace.model.skin.MonthlySolarResult>
+    </entry>
+  </monthlySolarResults>
+  <monthlySolarResultsAsList class="com.hemmis.mrw.pace.util.ObservableArrayList" id="815">
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="59"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="122"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="185"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="248"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="311"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="374"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="437"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="500"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="563"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="626"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="689"/>
+    <com.hemmis.mrw.pace.model.skin.MonthlySolarResult reference="752"/>
+  </monthlySolarResultsAsList>
+</com.hemmis.mrw.pace.model.skin.Opening>

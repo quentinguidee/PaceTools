@@ -1,0 +1,73 @@
+  <com.hemmis.mrw.pace.model.skin.WallPlane id="709">
+            <skin reference="225"/>
+            <state>UNCHANGED</state>
+            <isAnnexPlane>false</isAnnexPlane>
+            <shortDescription>Façade 1</shortDescription>
+            <isLossPlaneManually id="710" v="2">
+              <INITIAL class="java.lang.Boolean">false</INITIAL>
+            </isLossPlaneManually>
+            <isLossPlane id="711" v="2">
+              <INITIAL class="java.lang.Boolean">false</INITIAL>
+            </isLossPlane>
+            <heightManually id="712" v="2">
+              <INITIAL class="java.lang.Boolean">true</INITIAL>
+            </heightManually>
+            <height id="713" v="2">
+              <INITIAL/>
+            </height>
+            <widthManually id="714" v="2">
+              <INITIAL class="java.lang.Boolean">true</INITIAL>
+            </widthManually>
+            <width id="715" v="2">
+              <INITIAL/>
+            </width>
+            <grossSurfaceManually id="716" v="2">
+              <INITIAL class="java.lang.Boolean">false</INITIAL>
+            </grossSurfaceManually>
+            <grossSurface id="717" v="2">
+              <INITIAL/>
+            </grossSurface>
+            <additionalSurfaceManually id="718" v="2">
+              <INITIAL class="java.lang.Boolean">false</INITIAL>
+            </additionalSurfaceManually>
+            <additionalSurface id="719" v="2">
+              <INITIAL/>
+            </additionalSurface>
+            <restSurfaceManually id="720" v="2">
+              <INITIAL class="java.lang.Boolean">false</INITIAL>
+            </restSurfaceManually>
+            <restSurface id="721" v="2">
+              <INITIAL/>
+            </restSurface>
+            <slope id="722" v="2">
+              <INITIAL class="java.math.BigDecimal">90</INITIAL>
+            </slope>
+            <orientationManually id="723" v="2">
+              <INITIAL class="java.lang.Boolean">true</INITIAL>
+            </orientationManually>
+            <orientation id="724" v="2">
+              <INITIAL class="com.hemmis.mrw.pace.model.enums.Orientation">NNE</INITIAL>
+            </orientation>
+            <wallInstances class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneOpaqueInstanceSituationListProperty" id="725" v="2">
+              <parent class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="709"/>
+              <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="726"/>
+            </wallInstances>
+            <annexes class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneAnnexSituationListProperty" id="727" v="2">
+              <parent class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="709"/>
+              <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="728"/>
+            </annexes>
+            <basePlane class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneBasePlaneSituationReferenceProperty" id="729" v="2">
+              <owner class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="709"/>
+              <INITIAL/>
+            </basePlane>
+            <lossPlanes class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneLossPlaneSituationListProperty" id="730" v="2">
+              <parent class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="709"/>
+              <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="731"/>
+              <SECOND class="com.hemmis.mrw.pace.util.ObservableArrayList" id="732"/>
+            </lossPlanes>
+            <wallLossInstances class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneOpaqueLossInstanceSituationListProperty" id="733" v="2">
+              <parent class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="709"/>
+              <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="734"/>
+              <SECOND class="com.hemmis.mrw.pace.util.ObservableArrayList" id="735"/>
+            </wallLossInstances>
+          </com.hemmis.mrw.pace.model.skin.WallPlane>

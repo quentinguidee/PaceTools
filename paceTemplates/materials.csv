@@ -1,0 +1,125 @@
+;Material;Category;CategoryID
+1;Granulés d’argile expansée;Isolants;1
+2;Vermiculite expansée;Isolants;1
+3;Vermiculite expansée en granulés;Isolants;1
+4;Chaume;Isolants;1
+5;Isolation à base de fibres végétales ou animales;Isolants;1
+6;Isolation à base de fibres naturelles, in situ;Isolants;1
+7;Perlite expansée (EPB);Isolants;1
+8;Perlite expansée (EPB) en granulés;Isolants;1
+9;Cellulose;Isolants;1
+10;Cellulose soufflée;Isolants;1
+11;Polystyrène extrude (XPS) dans une toiture inversée;Isolants;1
+12;Verre cellulaire (CG);Isolants;1
+13;Verre cellulaire (CG) en granulés;Isolants;1
+14;Liège (ICB);Isolants;1
+15;Polystyrène expansé (EPS);Isolants;1
+16;Polystyrène expansé (EPS), in situ;Isolants;1
+17;Polyéthylène extrudé (PEF);Isolants;1
+18;Laine minérale (MW);Isolants;1
+19;Laine minérale (MW) soufflée;Isolants;1
+20;Polystyrène extrudé (XPS);Isolants;1
+21;Polyuréthane (PUR/PIR);Isolants;1
+22;Polyuréthane (PUR/PIR) injecté;Isolants;1
+23;Mousse phénolique (PF);Isolants;1
+24;Mousse phénolique (PF) injectée;Isolants;1
+25;Mousse urée-formaldéhyde (UF) injectée;Isolants;1
+26;Produit réfléchissant à bulle;Isolants;1
+27;Produit réfléchissant multicouches;Isolants;1
+28;Béton cellulaire;Isolants;1
+29;Isolant minéral rigide;Isolants;1
+30;Autre (Défini par le certificateur);Isolants;1
+31;Défini par l'auditeur;Isolants;1
+32;Briques (type inconnu);Briques (terre cuite);2
+33;Briques pleines;Briques (terre cuite);2
+34;Briques perforées;Briques (terre cuite);2
+35;Briques treillis ordinaires;Briques (terre cuite);2
+36;"Briques treillis ""isolantes""";Briques (terre cuite);2
+37;Défini par l'auditeur;Briques (terre cuite);2
+38;Blocs de béton (type inconnu);Blocs pleins et perforés;3
+39;Blocs de béton ordinaire;Blocs pleins et perforés;3
+40;Blocs de béton ordinaire légers ;Blocs pleins et perforés;3
+41;"Blocs de béton ""argex""";Blocs pleins et perforés;3
+42;"Blocs de béton ""argex"" légers ";Blocs pleins et perforés;3
+43;Blocs de béton cellulaire;Blocs pleins et perforés;3
+44;Blocs silico-calcaire (type inconnu);Blocs pleins et perforés;3
+45;Blocs silico-calcaire;Blocs pleins et perforés;3
+46;Blocs silico-calcaire légers ;Blocs pleins et perforés;3
+47;Blocs de plâtre;Blocs pleins et perforés;3
+48;Défini par l'auditeur;Blocs pleins et perforés;3
+49;Blocs creux de béton (type inconnu);Blocs creux (intérieurs);4
+50;Blocs creux de béton (14 cm);Blocs creux (intérieurs);4
+51;Blocs creux de béton (19 cm);Blocs creux (intérieurs);4
+52;Blocs creux de béton (29 cm);Blocs creux (intérieurs);4
+53;Blocs creux de béton léger (14 cm);Blocs creux (intérieurs);4
+54;Blocs creux de béton léger (19 cm);Blocs creux (intérieurs);4
+55;Blocs creux de béton léger (29 cm);Blocs creux (intérieurs);4
+56;Défini par l'auditeur;Blocs creux (intérieurs);4
+57;Béton (type inconnu);Béton coulé, chape,…;5
+58;Béton normal armé;Béton coulé, chape,…;5
+59;Béton normal non armé;Béton coulé, chape,…;5
+60;Béton léger ( < 1200 kg/m³);Béton coulé, chape,…;5
+61;Béton léger ( < 900 kg/m³);Béton coulé, chape,…;5
+62;Béton léger ( < 600 kg/m³);Béton coulé, chape,…;5
+63;Défini par l'auditeur;Béton coulé, chape,…;5
+64;Lame d'air fortement ventilée;Lame d'air;6
+65;Lame d'air peu ventilée;Lame d'air;6
+66;Lame d'air non ventilée;Lame d'air;6
+67;Enduit (type inconnu);Enduits et finitions;7
+68;Mortier de ciment;Enduits et finitions;7
+69;Mortier de chaux;Enduits et finitions;7
+70;Enduit de plâtre;Enduits et finitions;7
+71;Plaque de plâtre, < 1.4 cm;Enduits et finitions;7
+72;Plaque de plâtre, ≥ 1.4 cm;Enduits et finitions;7
+73;Défini par l'auditeur;Enduits et finitions;7
+74;Carreaux de grès;Divers;8
+75;Carreaux en terre cuite;Divers;8
+76;Membrane bitumineuse;Divers;8
+140;Panneaux fibres végétales/animales (150<≤500);Divers;8
+77;Panneau en ciment renforcé de fibres naturelles;Divers;8
+78;Linoléum;Divers;8
+79;Verre;Divers;8
+80;Défini par l'auditeur;Divers;8
+81;Tuiles;Divers (pour mémoire);9
+82;Ardoises;Divers (pour mémoire);9
+83;Sous-toiture;Divers (pour mémoire);9
+84;Pare-vapeur;Divers (pour mémoire);9
+85;Graviers;Divers (pour mémoire);9
+86;Défini par l'auditeur;Divers (pour mémoire);9
+87;Bois massif;Bois;10
+88;Panneau de bois (type inconnu);Bois;10
+89;Panneau de bois contreplaqué;Bois;10
+90;Panneau de bois aggloméré;Bois;10
+91;Panneau OSB;Bois;10
+92;Panneau MDF;Bois;10
+93;Panneau de fibres de bois liées au ciment;Bois;10
+94;Défini par l'auditeur;Bois;10
+95;Pierre naturelle (type inconnu);Pierres naturelles;11
+96;Pierre lourde (granit, gneiss, schiste…);Pierres naturelles;11
+97;Pierre bleue;Pierres naturelles;11
+98;Marbre;Pierres naturelles;11
+142;Pierre silico-calcaire;Pierres naturelles;11
+144;Ardoises (Pierre);Pierres naturelles;11
+99;Pierre dure (grès, poudingue,…);Pierres naturelles;11
+100;Pierre ferme (travertin,…);Pierres naturelles;11
+101;Pierre demi-ferme (tuffeau, craie…);Pierres naturelles;11
+102;Maçonnerie en moellons;Pierres naturelles;11
+103;Défini par l'auditeur;Pierres naturelles;11
+104;Bardage métallique (type inconnu);Métaux;12
+105;Zinc;Métaux;12
+106;Aluminium;Métaux;12
+107;Acier;Métaux;12
+108;Plomb;Métaux;12
+109;Cuivre;Métaux;12
+110;Fonte;Métaux;12
+111;Défini par l'auditeur;Métaux;12
+112;Plancher préfabriqué (type inconnu);Planchers préfabriqués;13
+113;Plancher préfabriqué en terre cuite, 8 cm;Planchers préfabriqués;13
+114;Plancher préfabriqué en terre cuite, 12 cm, 1 creux;Planchers préfabriqués;13
+115;Plancher préfabriqué. en terre cuite, 12 cm, 2 creux;Planchers préfabriqués;13
+116;Plancher préfabriqué en terre cuite, 16 cm;Planchers préfabriqués;13
+117;Plancher préfabriqué en terre cuite, 20 cm;Planchers préfabriqués;13
+118;Plancher préfabriqué en béton, 12 cm;Planchers préfabriqués;13
+119;Plancher préfabriqué en béton, 16 cm;Planchers préfabriqués;13
+120;Plancher préfabriqué en béton, 20 cm;Planchers préfabriqués;13
+121;Défini par l'auditeur;Planchers préfabriqués;13

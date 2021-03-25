@@ -1,0 +1,16 @@
+<com.hemmis.mrw.pace.model.skin.Layer id="4572">
+	<material id="4573">
+		<id>18</id>
+		<materialGroupId>1</materialGroupId>
+	</material>
+	<isExposedTo>false</isExposedTo>
+	<lamdaManually>false</lamdaManually>
+	<lamda>0.044</lamda>
+	<thicknessManually>true</thicknessManually>
+	<thickness>0.200</thickness>
+	<woodFractionManually>false</woodFractionManually>
+	<deltaRvalueManually>false</deltaRvalueManually>
+	<deltaRvalue>0</deltaRvalue>
+	<rvalueManually>false</rvalueManually>
+	<opaqueStructure reference="4570"/>
+</com.hemmis.mrw.pace.model.skin.Layer>

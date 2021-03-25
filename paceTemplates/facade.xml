@@ -1,0 +1,72 @@
+<com.hemmis.mrw.pace.model.skin.WallPlane id="1">
+  <state>UNCHANGED</state>
+  <isAnnexPlane>false</isAnnexPlane>
+  <shortDescription>Façade 1</shortDescription>
+  <isLossPlaneManually id="2" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </isLossPlaneManually>
+  <isLossPlane id="3" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </isLossPlane>
+  <heightManually id="4" v="2">
+    <INITIAL class="java.lang.Boolean">true</INITIAL>
+  </heightManually>
+  <height id="5" v="2">
+    <INITIAL/>
+  </height>
+  <widthManually id="6" v="2">
+    <INITIAL class="java.lang.Boolean">true</INITIAL>
+  </widthManually>
+  <width id="7" v="2">
+    <INITIAL/>
+  </width>
+  <grossSurfaceManually id="8" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </grossSurfaceManually>
+  <grossSurface id="9" v="2">
+    <INITIAL/>
+  </grossSurface>
+  <additionalSurfaceManually id="10" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </additionalSurfaceManually>
+  <additionalSurface id="11" v="2">
+    <INITIAL/>
+  </additionalSurface>
+  <restSurfaceManually id="12" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </restSurfaceManually>
+  <restSurface id="13" v="2">
+    <INITIAL/>
+  </restSurface>
+  <slope id="14" v="2">
+    <INITIAL class="java.math.BigDecimal">90</INITIAL>
+  </slope>
+  <orientationManually id="15" v="2">
+    <INITIAL class="java.lang.Boolean">true</INITIAL>
+  </orientationManually>
+  <orientation id="16" v="2">
+    <INITIAL/>
+  </orientation>
+  <wallInstances class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneOpaqueInstanceSituationListProperty" id="17" v="2">
+    <parent class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="1"/>
+    <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="18"/>
+  </wallInstances>
+  <annexes class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneAnnexSituationListProperty" id="19" v="2">
+    <parent class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="1"/>
+    <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="20"/>
+  </annexes>
+  <basePlane class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneBasePlaneSituationReferenceProperty" id="21" v="2">
+    <owner class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="1"/>
+    <INITIAL/>
+  </basePlane>
+  <lossPlanes class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneLossPlaneSituationListProperty" id="22" v="2">
+    <parent class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="1"/>
+    <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="23"/>
+    <SECOND class="com.hemmis.mrw.pace.util.ObservableArrayList" id="24"/>
+  </lossPlanes>
+  <wallLossInstances class="com.hemmis.mrw.pace.model.skin.AbstractPlane$AbstractPlaneOpaqueLossInstanceSituationListProperty" id="25" v="2">
+    <parent class="com.hemmis.mrw.pace.model.skin.WallPlane" reference="1"/>
+    <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="26"/>
+    <SECOND class="com.hemmis.mrw.pace.util.ObservableArrayList" id="27"/>
+  </wallLossInstances>
+</com.hemmis.mrw.pace.model.skin.WallPlane>

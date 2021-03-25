@@ -1,0 +1,55 @@
+<com.hemmis.mrw.pace.model.skin.FloorInstance id="1">
+  <state>UNCHANGED</state>
+  <shortDescription>Plancher 1</shortDescription>
+  <heightManually id="2" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </heightManually>
+  <height id="3" v="2">
+    <INITIAL/>
+  </height>
+  <widthManually id="4" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+  </widthManually>
+  <width id="5" v="2">
+    <INITIAL/>
+  </width>
+  <grossSurfaceManually id="6" v="2">
+    <INITIAL class="java.lang.Boolean">true</INITIAL>
+  </grossSurfaceManually>
+  <grossSurface id="7" v="2">
+    <INITIAL class="java.math.BigDecimal">25.00</INITIAL>
+    <SECOND class="java.math.BigDecimal">25.00</SECOND>
+  </grossSurface>
+  <netSurfaceManually id="8" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+    <SECOND class="java.lang.Boolean">false</SECOND>
+  </netSurfaceManually>
+  <netSurface id="9" v="2">
+    <INITIAL class="java.math.BigDecimal">25.00</INITIAL>
+    <SECOND class="java.math.BigDecimal">25.00</SECOND>
+  </netSurface>
+  <unshadManually id="10" v="2">
+    <INITIAL class="java.lang.Boolean">false</INITIAL>
+    <SECOND class="java.lang.Boolean">false</SECOND>
+  </unshadManually>
+  <openings class="com.hemmis.mrw.pace.model.skin.OpaqueInstance$OpaqueInstanceOpeningSituationListProperty" id="11" v="2">
+    <parent class="com.hemmis.mrw.pace.model.skin.FloorInstance" reference="1"/>
+    <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="12"/>
+  </openings>
+  <opaqueLossInstances class="com.hemmis.mrw.pace.model.skin.OpaqueInstance$OpaqueInstanceOpaqueLossInstanceSituationListProperty" id="13" v="2">
+    <parent class="com.hemmis.mrw.pace.model.skin.FloorInstance" reference="1"/>
+    <INITIAL class="com.hemmis.mrw.pace.util.ObservableArrayList" id="14"/>
+    <SECOND class="com.hemmis.mrw.pace.util.ObservableArrayList" id="15"/>
+  </opaqueLossInstances>
+  <plane isCut="true"/>
+  <slope id="16" v="2">
+    <INITIAL class="java.math.BigDecimal">0</INITIAL>
+  </slope>
+  <slopeAngle id="17" v="2">
+    <INITIAL class="com.hemmis.mrw.pace.model.enums.Angle">DEGREES_0</INITIAL>
+  </slopeAngle>
+  <opaqueElement class="com.hemmis.mrw.pace.model.skin.OpaqueInstance$OpaqueInstanceOpaqueElementSituationReferenceProperty" id="18" v="2">
+    <owner class="com.hemmis.mrw.pace.model.skin.FloorInstance" reference="1"/>
+    <INITIAL class="com.hemmis.mrw.pace.model.skin.Floor" isCut="true" uniqueReference="P2"/>
+  </opaqueElement>
+</com.hemmis.mrw.pace.model.skin.FloorInstance>
