@@ -178,7 +178,7 @@ class PACEXML:
         return roofPlane.attrib['id']
     
     
-    def addWallInstance(self,facadeID,wallType,area):
+    def addWallInstance(self,facadeID,wallType,area,suffix=' instance'):
         
         wallID = self.findConstructionElementID(wallType,'wall')
         
@@ -214,7 +214,7 @@ class PACEXML:
 
         self.setObjectGrossSurface(wallInstance,area,'INITIAL')        
 
-        wallInstance.find('shortDescription').text = wallType+' instance'
+        wallInstance.find('shortDescription').text = wallType+suffix
 
         #Inserting the newly created instance
         initial.append(wallInstance)       
@@ -234,7 +234,7 @@ class PACEXML:
         self.reorderIdsAndReferences()
 
 
-    def addRoofInstance(self,roofPlaneID,roofType,area):
+    def addRoofInstance(self,roofPlaneID,roofType,area,suffix=' instance'):
         
         roofID = self.findConstructionElementID(roofType,'roof')
 
@@ -270,7 +270,7 @@ class PACEXML:
 
         self.setObjectGrossSurface(roofInstance,area,'INITIAL')        
    
-        roofInstance.find('shortDescription').text = roofType+' instance'
+        roofInstance.find('shortDescription').text = roofType+suffix
 
         #Inserting the newly created instance
         initial.append(roofInstance)       
@@ -325,7 +325,7 @@ class PACEXML:
         return float(floorPlane.find('grossSurface').find(situation).text)
 
 
-    def addFloorInstance(self,floorType,area):
+    def addFloorInstance(self,floorType,area,suffix=' instance'):
                 
         floorID = self.findConstructionElementID(floorType,'floor')
 
@@ -367,7 +367,7 @@ class PACEXML:
 
         self.setObjectGrossSurface(floorInstance,area,'INITIAL')        
    
-        floorInstance.find('shortDescription').text = floorType+' instance'
+        floorInstance.find('shortDescription').text = floorType+suffix
 
         #Inserting the newly created instance
         initial.append(floorInstance)       
