@@ -48,7 +48,7 @@ class PACEXML:
 
     def setMeasurementMethod(self,method):
 
-        acceptablemethodsdict={'projection':'PROJECTION','surfacesbrutes':'MEASUREMENT_GROSS_SURFACE'}
+        acceptablemethodsdict={'projection':'PROJECTION','surfacesbrutes':'MEASUREMENT_GROSS_SURFACE','surfacesnettes':'MEASUREMENT'}
 
         if method not in acceptablemethodsdict.keys():
             print("Acceptable methods are ",acceptablemethodsdict.keys())
@@ -79,6 +79,18 @@ class PACEXML:
             self.addConstructionElement(surface['type'],surface['label'],surface['description'],surface['environment'],surface['subtype'])
             self.setGrossSurface(surface['label'],surface['grossArea'])
             self.setGrossSurfaceMod(surface['label'],surface['grossAreaMod'])
+
+    def addNetSurfaces(self,surfacesList):    
+        
+        for surface in surfacesList:
+        
+            self.addConstructionElement(surface['type'],surface['label'],surface['description'],surface['environment'],surface['subtype'])
+        
+        
+            if (surface['type'] is not 'transparentElement'):
+                self.setNetSurface(surface['label'],surface['grossArea'])
+                self.setNetSurfaceMod(surface['label'],surface['grossAreaMod'])
+
 
 
     def addFacadesAndSurfaces(self,facadesDict):
@@ -485,22 +497,7 @@ class PACEXML:
 
         #environment = OPEN_AIR, NON_HEATED_SPACE,GROUND,_WITH_OPENINGS,CELLAR_WITH_OPENINGS,CELLAR_WITHOUT_OPENINGS,HEATED_SPACE        
         
-        paceclass = self.constructionElementsClasses
-        
-        pacetags={ 'wall':'walls',
-                   'roof':'roofs',
-                   'floor':'floors',
-                   'transparentElement':'transparentElements'}
-        
-        constructionElements = self.getConstructionElements()
-        latestConstructionElementID = self.getHighestID(constructionElements)
-
         elementXMLElement = self.getTemplateElement(elementType)
-
-        latestAddedID=self.renumberTreeOrElem(elementXMLElement,latestConstructionElementID+1)
-        self.renumberMainTreeFromID(latestConstructionElementID+1,latestAddedID+1)
-
-
         elementXMLElement.find('reference').text = label
         elementXMLElement.find('shortDescription').text = description
         elementXMLElement.find('environment').text = environment
@@ -523,13 +520,54 @@ class PACEXML:
 
         self.setSubType(elementXMLElement,elementType,subtype)
 
+        self.insertConstructionElementXML(elementType,elementXMLElement)
+
+
+    def addPredefinedConstructionElement(self,elementType,label,description,environment,elementTemplateDescription):
+
+        elementXMLElement = self.elemsTemplatesDict[elementType][elementTemplateDescription]
+        elementXMLElement.find('reference').text = label
+        elementXMLElement.find('shortDescription').text = description
+        elementXMLElement.find('environment').text = environment
+        
+        skinID = self.mainTree.find('.//skin[@id]').attrib['id']
+        elemSkin = elementXMLElement.find('skin')
+
+        if (elemSkin != None):        
+            elemSkin.set('reference',skinID)
+            if 'isCut' in elemSkin.attrib.keys():
+                elemSkin.attrib.pop('isCut')                               
+            
+       
+        environmentAdvice = elementXMLElement.find("environmentAdvice")
+        if (environmentAdvice == None):
+            environmentAdvice = ET.Element("environmentAdvice")
+            elementXMLElement.append(environmentAdvice)
+    
+        environmentAdvice.text = environment
+
+        self.insertConstructionElementXML(elementType,elementXMLElement)
+
+
+
+    def insertConstructionElementXML(self,elementType,elementXMLElement):        
+        
+        constructionElements = self.getConstructionElements()
+        latestConstructionElementID = self.getHighestID(constructionElements)
+
+        latestAddedID=self.renumberTreeOrElem(elementXMLElement,latestConstructionElementID+1)
+        self.renumberMainTreeFromID(latestConstructionElementID+1,latestAddedID+1)
 
         constructionElements.append(elementXMLElement)
 
+        pacetags={ 'wall':'walls',
+                   'roof':'roofs',
+                   'floor':'floors',
+                   'transparentElement':'transparentElements'}
 
         #There are lists of constructions elements elsewhere in the file, they need to be updated
         elemlist=self.mainTree.find('.//skin[@id]').find(pacetags[elementType])
-        ET.SubElement(elemlist, paceclass[elementType], reference=elementXMLElement.attrib['id'])
+        ET.SubElement(elemlist, self.constructionElementsClasses[elementType], reference=elementXMLElement.attrib['id'])
 
 
     def setWallDetails(self,label,thickness=0.30,basisComposition='Pierre < 40',layers=[]):
@@ -699,6 +737,61 @@ class PACEXML:
         self.reorderIdsAndReferences()
 
 
+    def addOpeningNetMethod(self,opening_name,openingtype,direction,inclination=90,area=1):
+    
+        #modified situation: UNCHANGED ; REMOVED; CHANGED; ADDED
+        # ADDED: remplir tous les fields "second"
+        
+        openingElement = self.getTemplateElement('opening')
+
+        lastFileId = self.getHighestID(self.mainTree)
+        self.renumberTreeOrElem(openingElement,lastFileId+1)
+    
+        skinID = self.mainTree.find('.//skin[@id]').attrib['id']
+        
+        openingElement.find('openingSkin[@isCut]').set('reference',skinID)
+        openingElement.find('openingSkin').attrib.pop('isCut')
+ 
+        openingtypeid = self.findConstructionElementID(openingtype,'transparentElement')
+        openingclass= 'com.hemmis.mrw.pace.model.skin.TransparentElement'
+        
+        openingElement.find('./transparentElement/INITIAL').attrib['class']=openingclass
+        openingElement.find('./transparentElement/INITIAL').attrib['reference']=openingtypeid
+        openingElement.find('./transparentElement/INITIAL').attrib.pop('isCut')
+        openingElement.find('./transparentElement/INITIAL').attrib.pop('uniqueReference')
+        
+        des=openingElement.find('shortDescription')
+        des.text=opening_name
+        
+        openingElement.find('./surface/INITIAL').text=str(area)
+        
+        openingElement.find('./orientation').find('INITIAL').text=direction
+        
+        #on l'ajoute a l'endroit le plus logique, on reorganisera après
+        openings=self.mainTree.find('.//skin[@id]/openings')
+        initial=openings.find('./INITIAL')
+        initial.append(openingElement)
+        
+        transelem=self.mainTree.find('.//*[@id="'+openingtypeid+'"]')
+        
+        topeningslist=transelem.find('./openings/INITIAL')
+        ET.SubElement(topeningslist, openingElement.tag, {'reference':openingElement.attrib['id']})
+
+        ref = ET.Element(openingElement.tag,{'reference':openingElement.attrib['id']})
+        #wopeningsListSecond.append(ref)
+
+        topeningsListSecond = transelem.find('./openings/SECOND')      
+        if (topeningsListSecond == None):
+            topeningsListSecond = ET.Element('SECOND')
+            transelem.find('./openings').append(topeningsListSecond)
+ 
+        ref = ET.Element(openingElement.tag,{'reference':openingElement.attrib['id']})
+        topeningsListSecond.append(ref)
+
+
+        self.reorderIdsAndReferences()
+
+
 
 
     def setSubType(self,elemXML,skinType,subType):
@@ -757,6 +850,40 @@ class PACEXML:
 
         return subTree.getroot()
 
+bn
+    def loadPredefinedTemplateElements(self,templateFile):
+        
+        templateXML = PACEXML(templateFile)
+        templateElems = templateXML.getConstructionElements() #GET ALL CE FROM TEMPLATE
+
+        self.elemsTemplatesDict={}
+
+        for elementType in ['wall','floor','roof','transparentElement']:
+
+            paceClass = self.constructionElementsClasses[elementType]
+  
+            elementsOfClass = templateElems.findall('.//'+paceClass+'[@id]') + templateElems.findall('.//*[@class="'+paceClass+'"][@id]')
+
+            elemsDict = {}
+            
+            for elem in elementsOfClass:
+                elemsDict[elem.find('.//shortDescription').text] = elem
+                
+            self.elemsTemplatesDict[elementType] = elemsDict
+
+    """def getPredefinedTemplateElements(self):
+        
+        return self.elemsTemplatesDict
+    """
+    
+    def getPredefinedTemplatesElementsList(self):
+        
+        localDict = {}
+        
+        for elemType,elemDict in self.elemsTemplatesDict.items():
+            localDict[elemType] = list(elemDict.keys())
+
+        return localDict
         
     def renumberTreeOrElem(self,TreeOrElement,newStartID):
     
@@ -812,6 +939,54 @@ class PACEXML:
         for e in elementsWithRef:
             if e.attrib['reference'] in oldID_to_newID_dict.keys(): 
                 e.attrib['reference']=oldID_to_newID_dict[e.attrib['reference']]  
+
+
+    def setNetSurface(self,label,surfaceArea):
+
+        paceroot=self.mainTree.getroot()
+        
+        celems=paceroot.findall('.//constructionElements')[0] #findall retuns a list. If one exepects single elem, takes 0 of list
+
+        for c in celems:
+            #print(c.find('reference').text)
+            
+            if (c.find('reference').text == label):
+                #print(c.find('reference').text)
+                
+                grossSurfaceManually=c.find('netSurfaceManually')
+                state=grossSurfaceManually.find('./INITIAL/CURRENT__STATE')
+                state.text='true'
+
+                grossSurface=c.find('netSurface')
+                state=grossSurface.find('./INITIAL/CURRENT__STATE')
+                state.text=str(surfaceArea)
+
+
+    def setNetSurfaceMod(self,label,surfaceArea):
+
+        paceroot=self.mainTree.getroot()
+        
+        celems=paceroot.findall('.//constructionElements')[0] #findall retuns a list. If one exepects single elem, takes 0 of list
+
+        for c in celems:
+            
+            if (c.find('reference').text == label):
+
+                grossSurface=c.find('netSurface')
+               
+                second = ET.Element("SECOND")
+                grossSurface.append(second)
+
+                second.set('class', 'com.hemmis.mrw.pace.model.ObservableSpecProperty')
+                second.set('id','999')
+                second.set('v','2')
+                
+                state = ET.Element("CURRENT__STATE")
+                second.append(state)
+                
+                state.set('class','java.math.BigDecimal')
+                state.text=str(surfaceArea)
+
 
 
     def setGrossSurface(self,label,surfaceArea):
@@ -1031,11 +1206,6 @@ class materials:
 
         return matID,catID
     
-    #def getMaterialId(self,materialName):
-        
-    
-    #print(self.materials)
-        
     
                     
 
@@ -1080,8 +1250,8 @@ def test1(template,outputname):
     #print("Area ",xml.getFloorPlaneArea('INITIAL'))
 
 
-    xml.writePaceFile(outputname+'.xml')
-    xml.writePaceFile(outputname+'.pae')
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.xml'))
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.pae'))
 
     
     
@@ -1120,8 +1290,8 @@ def test2(template,outputname):
     xml.setInsideTemperature(18)
     xml.setPicture('test_picture.png','init')
     
-    xml.writePaceFile(outputname+'.xml')
-    xml.writePaceFile(outputname+'.pae')
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.xml'))
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.pae'))
 
     
 
@@ -1150,8 +1320,8 @@ def test3(template,outputname):
     xml.addSurfaces(surfacesList)
 
 
-    xml.writePaceFile(outputname+'.xml')
-    xml.writePaceFile(outputname+'.pae')
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.xml'))
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.pae'))
 
     
 
@@ -1197,8 +1367,101 @@ def test4(template,outputname):
     xml.setPicture('test_picture.png','init')
     
     
-    xml.writePaceFile(outputname+'.xml')
-    xml.writePaceFile(outputname+'.pae')
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.xml'))
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.pae'))
+
+
+def test4b(template,outputname):
+
+    ############################################
+    #Methode des surfaces nettes avec fenêtres
+    ############################################
+
+    xml = PACEXML(template)
+    xml.setTemplatesDir('paceTemplates')
+
+    xml.setMeasurementMethod('surfacesnettes')
+
+    #ajout de types de parois
+    xml.addConstructionElement('wall','M2','mur 2','OPEN_AIR','FULL')
+    xml.addConstructionElement('floor','P1','This is P1','GROUND','')
+    xml.addConstructionElement('floor','P2','This is P2','GROUND','')
+
+    xml.addConstructionElement('roof','T1','This is T1','OPEN_AIR','INCLINED')
+    xml.addConstructionElement('roof','T2','This is T2','OPEN_AIR','INCLINED')
+
+    xml.addConstructionElement('transparentElement','F1','Fenetre 1','OPEN_AIR','')
+    xml.addConstructionElement('transparentElement','F2','Fenetre 2','OPEN_AIR','')
+    
+    xml.addConstructionElement('wall','M1','mur 1','OPEN_AIR','FULL')
+       
+    xml.setNetSurface('M1',50)
+    xml.setNetSurface('M2',50)
+    xml.setNetSurface('P1',50)
+    xml.setNetSurface('P2',50)
+    xml.setNetSurface('T1',50)
+    xml.setNetSurface('T2',50)
+    
+
+    
+    xml.addOpeningNetMethod('Ouverture 1','F1','N')  
+    xml.addOpeningNetMethod('Ouverture 2','F1','W')
+    xml.addOpeningNetMethod('Ouverture 3','F2','S')
+        
+    xml.setHeatedVolume(1000,1200)
+    xml.setInsideTemperature(18)
+    xml.setPicture('test_picture.png','init')
+    
+    
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.xml'))
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.pae'))
+
+
+def test4c(template,outputname):
+
+    ################################################################
+    #Methode des surfaces nettes avec fenêtres et situation modifiee
+    ################################################################
+
+    xml = PACEXML(template)
+    xml.setTemplatesDir('paceTemplates')
+
+    xml.setMeasurementMethod('surfacesnettes')
+
+    #ajout de types de parois
+    xml.addConstructionElement('wall','M2','mur 2','OPEN_AIR','FULL')
+    xml.addConstructionElement('floor','P1','This is P1','GROUND','')
+    xml.addConstructionElement('floor','P2','This is P2','GROUND','')
+
+    xml.addConstructionElement('roof','T1','This is T1','OPEN_AIR','INCLINED')
+    xml.addConstructionElement('roof','T2','This is T2','OPEN_AIR','INCLINED')
+
+    xml.addConstructionElement('transparentElement','F1','Fenetre 1','OPEN_AIR','')
+    xml.addConstructionElement('transparentElement','F2','Fenetre 2','OPEN_AIR','')
+    
+    xml.addConstructionElement('wall','M1','mur 1','OPEN_AIR','FULL')
+       
+    xml.setNetSurface('M1',50)
+    xml.setNetSurface('M2',50)
+    xml.setNetSurface('P1',50)
+    xml.setNetSurface('P2',50)
+    xml.setNetSurface('T1',50)
+    xml.setNetSurface('T2',50)
+    
+    
+
+    
+    xml.addOpeningNetMethod('Ouverture 1','F1','N')  
+    xml.addOpeningNetMethod('Ouverture 2','F1','W')
+    xml.addOpeningNetMethod('Ouverture 3','F2','S')
+        
+    xml.setHeatedVolume(1000,1200)
+    xml.setInsideTemperature(18)
+    xml.setPicture('test_picture.png','init')
+    
+    
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.xml'))
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.pae'))
 
     
     
@@ -1251,9 +1514,36 @@ def test5(template,outputname):
 
     xml.setGrossSurface('M1',50)
    
-    xml.writePaceFile(outputname+'.xml')
-    xml.writePaceFile(outputname+'.pae')
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.xml'))
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.pae'))
 
+
+def test6(template,outputname):
+
+    #ajout d'éléments prédéfinis depuis un template
+    
+    xml = PACEXML(template)
+    xml.setTemplatesDir('paceTemplates')
+
+    ceTemplateFile = 'constructionElementsDataBase.xml'
+    xml.loadPredefinedTemplateElements(os.path.join('paceTemplates',ceTemplateFile))
+
+
+    existingElements = xml.getPredefinedTemplatesElementsList()
+
+    print(existingElements)
+   
+    #def addPredefinedConstructionElement(self,elementType,label,description,environment,elementTemplateDescription):
+    #ajout de types de parois
+    xml.addPredefinedConstructionElement('wall','MNEW','This is an imported wall from library','OPEN_AIR','Mur pierre 50')
+    xml.addPredefinedConstructionElement('roof','TOLD','This is an imported wall from library','OPEN_AIR','Ardoise ou tuiles sans sous toiture')
+    
+    
+    
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.xml'))
+    xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.pae'))
+
+    
 
 
 
@@ -1265,7 +1555,10 @@ def main():
     test1(template,'testProjection')
     test2(template,'testGross')
     test3(template,'testGrossAllInOne')
+    
     test4(template,'testGrossWindows')
+    test4b(template,'testNetWindows')
+
     test5(template,'testLayers')
     
     templateMazout = os.path.join('paceTemplates','ccMazout_template.xml')
@@ -1273,8 +1566,10 @@ def main():
 
     templatePasdeChauffage = os.path.join('paceTemplates','aucunSysteme_template.xml')
     test1(templatePasdeChauffage,'testNoHeating')
-
-
+    
+    
+    test6(template,'testWithTemplates')
+    
 
 
 if __name__ == "__main__":
