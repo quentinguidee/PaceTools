@@ -36,7 +36,7 @@ class PACEXML:
         except:
             print("could not read PAE file")            
 
-   
+      
     def setTemplatesDir(self,directory):
     
         self.templatesDir = directory
@@ -58,6 +58,35 @@ class PACEXML:
         methodXMLE=self.mainTree.find('.//surfaceCalculationType')
         methodXMLE.text=acceptablemethodsdict[method]
 
+
+    def setPrice(self,price):
+
+        priceElem=self.mainTree.find('.//advicePrice')
+        if (priceElem is None):
+            priceElem = ET.Element('advicePrice')
+            self.mainTree.getroot().append(priceElem)
+
+        priceElem.text=str(price)
+
+
+    def setVPDescription(self,text):
+        elem = self.mainTree.find('.//remarkTotalHeatedSpace').find('INITIAL')
+        elem.set('class',"java.lang.String")
+        elem.text=text
+
+    def setNumberOfFacades(self,number):
+        
+        valueDict = {1:'ONE_FREE',2:'TWO_FREE',3:'THREE_FREE',4:'DETACHED'}
+        
+        elem = self.mainTree.find('../freeFacadeCount')
+        if elem is None:
+            buildingElem = self.mainTree.find('.//building[@id]')
+            elem = ET.Element('freeFacadeCount')
+        try:
+            elem.text= valueDict[number]
+            buildingElem.append(elem)
+        except:
+            print("error in set number of facades")
 
     def addSurfaces(self,surfacesList):    
         # methode des surfaces brutes
@@ -87,7 +116,7 @@ class PACEXML:
             self.addConstructionElement(surface['type'],surface['label'],surface['description'],surface['environment'],surface['subtype'])
         
         
-            if (surface['type'] is not 'transparentElement'):
+            if (surface['type'] != 'transparentElement'):
                 self.setNetSurface(surface['label'],surface['grossArea'])
                 self.setNetSurfaceMod(surface['label'],surface['grossAreaMod'])
 
@@ -766,7 +795,9 @@ class PACEXML:
         openingElement.find('./surface/INITIAL').text=str(area)
         
         openingElement.find('./orientation').find('INITIAL').text=direction
-        
+
+
+               
         #on l'ajoute a l'endroit le plus logique, on reorganisera après
         openings=self.mainTree.find('.//skin[@id]/openings')
         initial=openings.find('./INITIAL')
@@ -778,15 +809,39 @@ class PACEXML:
         ET.SubElement(topeningslist, openingElement.tag, {'reference':openingElement.attrib['id']})
 
         ref = ET.Element(openingElement.tag,{'reference':openingElement.attrib['id']})
+
+
         #wopeningsListSecond.append(ref)
 
         topeningsListSecond = transelem.find('./openings/SECOND')      
         if (topeningsListSecond == None):
             topeningsListSecond = ET.Element('SECOND')
             transelem.find('./openings').append(topeningsListSecond)
- 
+
+
+        #on l'ajoute a l'endroit le plus logique, on reorganisera après
+        openings=self.mainTree.find('.//skin[@id]/openings')
+        second=openings.find('./SECOND')
+        ref = ET.Element(openingElement.tag,{'reference':openingElement.attrib['id']})
+
+        second.append(ref)
+        
+        
         ref = ET.Element(openingElement.tag,{'reference':openingElement.attrib['id']})
         topeningsListSecond.append(ref)
+
+        
+        #tested this piece of code, it works! 
+        openingElement.find('./state').text='CHANGED'
+        second = ET.Element('SECOND',{'class':"java.math.BigDecimal"})
+        second.text = str(1.14133)
+        openingElement.find('./surface').append(second)
+
+        #building --> skin --> openings --> INITIAL
+        #building --> skin --> openings --> SECOND
+        
+        #building --> skin --> constructionElements --> transparentElements --> element XX --> openings --> INITIAL
+        #building --> skin --> constructionElements --> transparentElements --> element XX --> openings --> SECOND
 
 
         self.reorderIdsAndReferences()
@@ -850,7 +905,7 @@ class PACEXML:
 
         return subTree.getroot()
 
-bn
+
     def loadPredefinedTemplateElements(self,templateFile):
         
         templateXML = PACEXML(templateFile)
@@ -978,7 +1033,7 @@ bn
                 grossSurface.append(second)
 
                 second.set('class', 'com.hemmis.mrw.pace.model.ObservableSpecProperty')
-                second.set('id','999')
+                second.set('id','99999')
                 second.set('v','2')
                 
                 state = ET.Element("CURRENT__STATE")
@@ -986,6 +1041,25 @@ bn
                 
                 state.set('class','java.math.BigDecimal')
                 state.text=str(surfaceArea)
+
+                #manually flag
+
+                netSurfaceManually = c.find('netSurfaceManually')
+                
+                second = ET.Element("SECOND")
+                netSurfaceManually.append(second)
+
+                second.set('class', 'com.hemmis.mrw.pace.model.ObservableSpecProperty')
+                second.set('id','99998')
+                second.set('v','2')
+                
+                state = ET.Element("CURRENT__STATE")
+                second.append(state)
+                
+                state.set('class','java.lang.Boolean')
+                state.text='true'
+
+
 
 
 
@@ -1056,6 +1130,65 @@ bn
             modifiedHeatedVolumeXMLE.attrib['class']='java.math.BigDecimal'
         
         
+    def addFloorLevel(self,levelName,levelFloorArea,situation='init'):
+        
+        levels = self.mainTree.find('.//levels')
+        
+        newLevel = ET.Element('com.hemmis.mrw.pace.model.skin.Level',attrib={'id':''})
+        ET.SubElement(newLevel,'skin',{'reference':self.mainTree.find('.//skin[@id]').attrib['id']})
+
+        subElementsDict = {'shortDescription':levelName,
+                           'heightManually':'false',
+                           'widthManually':'false',
+                           'surfaceManually':'true',
+                           'surface':str(levelFloorArea)} 
+
+        for tag,text in subElementsDict.items():
+            subE = ET.SubElement(newLevel,tag)
+            subE.text = text
+        
+        if (situation == 'init'):
+            levelsList = levels.find('.//INITIAL')
+            levelsList.append(newLevel)
+        
+        
+    def setInertia(self,category,situation='init'):
+
+        acceptable = ['HEAVY','MID_HEAVY','MODERATE_HEAVY','LIGHT']
+        
+        if category not in acceptable:
+            print ("Wrong inertia")
+            print ("acceptable values are:")
+            [print (x) for x in acceptable]
+            return
+        
+        constructionTypeElem = self.mainTree.find('.//constructionType')
+
+        if situation=='init':
+            targetElement = constructionTypeElem.find('INITIAL').find('CURRENT__STATE')
+            targetElement.set('class',"com.hemmis.mrw.pace.model.enums.ConstructionType")
+            targetElement.text = category
+        
+    def setWeatherStations(self,temperatureStation='PEB',sunStation='PEB'):
+        
+        #<weatherStation>STREE_BEAUMONT</weatherStation>
+        #<weatherStationSun>DOURBES</weatherStationSun>
+
+        #<weatherStation>PEB</weatherStation>
+        #<weatherStationSun>PEB</weatherStationSun>
+
+        weatherStationElement = ET.Element('weatherStation')
+        weatherStationElement.text = temperatureStation
+        
+        sunStationElement = ET.Element('weatherStationSun')
+        sunStationElement.text = sunStation
+        
+        self.mainTree.getroot().append(weatherStationElement)
+        self.mainTree.getroot().append(sunStationElement)
+        
+
+        
+        
     def setInsideTemperature(self,value):
     
         insideTemperatureMethodXMLE=self.mainTree.find('.//insideTemperatureCalculationType')
@@ -1120,7 +1253,18 @@ bn
         else:
             return
     
+    def setFirstPagePicture(self,imageFile):
+        building = self.mainTree.find('.//building[@id]')
+        imageElement = building.find('image')
         
+        if imageElement is None:
+            imageElement = ET.Element('image',attrib={'class':'java.awt.image.BufferedImage'})
+        
+        asciiImage = imageProcessor().fileToBase64(imageFile)
+
+        imageElement.text = asciiImage
+        
+        building.append(imageElement)
 
     def writePaceFile(self,filename):
     
@@ -1447,8 +1591,7 @@ def test4c(template,outputname):
     xml.setNetSurface('P2',50)
     xml.setNetSurface('T1',50)
     xml.setNetSurface('T2',50)
-    
-    
+    xml.setNetSurfaceMod('T2',62)
 
     
     xml.addOpeningNetMethod('Ouverture 1','F1','N')  
@@ -1456,13 +1599,25 @@ def test4c(template,outputname):
     xml.addOpeningNetMethod('Ouverture 3','F2','S')
         
     xml.setHeatedVolume(1000,1200)
+    xml.addFloorLevel('Rez de chaussee',142,'init')
+    xml.setInertia('MODERATE_HEAVY')
+    xml.setWeatherStations()
+    
     xml.setInsideTemperature(18)
     xml.setPicture('test_picture.png','init')
+    xml.setFirstPagePicture('test_picture.png')
+
     
+
+    
+    xml.setPrice(900)
+    xml.setVPDescription("C'est le volume protégé")
+    xml.setNumberOfFacades(4)    
     
     xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.xml'))
     xml.writePaceFile(os.path.join('paceToolsTestDir',outputname+'.pae'))
 
+    print("Test 4 c completed")
     
     
 def test5(template,outputname):
@@ -1549,27 +1704,32 @@ def test6(template,outputname):
 
 def main():
     
+    outputTestDir = 'paceToolsTestDir'
+    if ( not os.path.exists(outputTestDir) ):
+        os.mkdir(outputTestDir)
+    
     
     template = os.path.join('paceTemplates','audit_vierge.xml')
+    templateMazout = os.path.join('paceTemplates','ccMazout_template.xml')
+    templatePasdeChauffage = os.path.join('paceTemplates','aucunSysteme_template.xml')
 
-    test1(template,'testProjection')
+    """test1(template,'testProjection')
     test2(template,'testGross')
     test3(template,'testGrossAllInOne')
-    
-    test4(template,'testGrossWindows')
-    test4b(template,'testNetWindows')
+    """
+    #test4(template,'testGrossWindows')
+    #test4b(template,'testNetWindows')
+    test4c(templatePasdeChauffage,'testNetWindowsMod')
 
-    test5(template,'testLayers')
+    """test5(template,'testLayers')
     
-    templateMazout = os.path.join('paceTemplates','ccMazout_template.xml')
     test1(templateMazout,'testMazout')
 
-    templatePasdeChauffage = os.path.join('paceTemplates','aucunSysteme_template.xml')
     test1(templatePasdeChauffage,'testNoHeating')
     
     
     test6(template,'testWithTemplates')
-    
+    """
 
 
 if __name__ == "__main__":
