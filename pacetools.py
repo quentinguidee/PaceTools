@@ -1,6 +1,4 @@
-import sys
 import xml.etree.ElementTree as ET
-import copy
 import os
 import numpy as np
 
@@ -502,6 +500,17 @@ class PACEXML:
             
         return None
         
+
+    def findOpeningByName(self,openingName):
+        
+        openings = self.mainTree.findall('.//com.hemmis.mrw.pace.model.skin.Opening[@id]')
+        
+        
+        for o in openings:
+            if o.find('shortDescription').text == openingName:
+                return o
+            
+        return None
     
 
     def getHighestID(self,element):
@@ -725,10 +734,7 @@ class PACEXML:
         openingElement.find('./orientation').find('INITIAL').text=direction
         #openingElement.find('./orientation').find('SECOND').text=direction
         
-        #find all openings
         
-        
-        #on l'ajoute a l'endroit le plus logique, on reorganisera après
         openings=self.mainTree.find('.//skin[@id]/openings')
         initial=openings.find('./INITIAL')
         initial.append(openingElement)
@@ -796,8 +802,6 @@ class PACEXML:
         
         openingElement.find('./orientation').find('INITIAL').text=direction
 
-
-               
         #on l'ajoute a l'endroit le plus logique, on reorganisera après
         openings=self.mainTree.find('.//skin[@id]/openings')
         initial=openings.find('./INITIAL')
@@ -808,44 +812,152 @@ class PACEXML:
         topeningslist=transelem.find('./openings/INITIAL')
         ET.SubElement(topeningslist, openingElement.tag, {'reference':openingElement.attrib['id']})
 
-        ref = ET.Element(openingElement.tag,{'reference':openingElement.attrib['id']})
 
-
-        #wopeningsListSecond.append(ref)
-
+        
         topeningsListSecond = transelem.find('./openings/SECOND')      
         if (topeningsListSecond == None):
             topeningsListSecond = ET.Element('SECOND')
             transelem.find('./openings').append(topeningsListSecond)
 
 
-        #on l'ajoute a l'endroit le plus logique, on reorganisera après
         openings=self.mainTree.find('.//skin[@id]/openings')
         second=openings.find('./SECOND')
         ref = ET.Element(openingElement.tag,{'reference':openingElement.attrib['id']})
-
         second.append(ref)
         
         
         ref = ET.Element(openingElement.tag,{'reference':openingElement.attrib['id']})
         topeningsListSecond.append(ref)
 
-        
-        #tested this piece of code, it works! 
-        openingElement.find('./state').text='CHANGED'
-        second = ET.Element('SECOND',{'class':"java.math.BigDecimal"})
-        second.text = str(1.14133)
-        openingElement.find('./surface').append(second)
-
         #building --> skin --> openings --> INITIAL
         #building --> skin --> openings --> SECOND
         
         #building --> skin --> constructionElements --> transparentElements --> element XX --> openings --> INITIAL
         #building --> skin --> constructionElements --> transparentElements --> element XX --> openings --> SECOND
-
+        
 
         self.reorderIdsAndReferences()
 
+
+    def addOpeningNetMethodMod(self,opening_name,openingtype,direction,inclination=90,area=1):
+    
+        #adding an opening only in modified situation
+        
+        openingElement = self.getTemplateElement('opening')
+        openingElement.find('./state').text='ADDED'
+
+        lastFileId = self.getHighestID(self.mainTree)
+        self.renumberTreeOrElem(openingElement,lastFileId+1)
+    
+        skinID = self.mainTree.find('.//skin[@id]').attrib['id']
+        
+        openingElement.find('openingSkin[@isCut]').set('reference',skinID)
+        openingElement.find('openingSkin').attrib.pop('isCut')
+ 
+        openingtypeid = self.findConstructionElementID(openingtype,'transparentElement')
+        openingclass= 'com.hemmis.mrw.pace.model.skin.TransparentElement'
+        
+        openingElement.find('./transparentElement/INITIAL').attrib['class']=openingclass
+        openingElement.find('./transparentElement/INITIAL').attrib['reference']=openingtypeid
+        openingElement.find('./transparentElement/INITIAL').attrib.pop('isCut')
+        openingElement.find('./transparentElement/INITIAL').attrib.pop('uniqueReference')
+        openingElement.find('./transparentElement/INITIAL').tag = 'SECOND'
+        
+        des=openingElement.find('shortDescription')
+        des.text=opening_name
+
+
+        surface = openingElement.find('surface')
+
+        surface.find('INITIAL').text = str(area)
+        second = ET.Element('SECOND',{'class':'java.math.BigDecimal'})
+        second.text = str(area)
+        surface.append(second) 
+        
+        orientation = openingElement.find('orientation')
+        second = ET.Element('SECOND',{'class':'com.hemmis.mrw.pace.model.enums.Orientation'})
+        second.text = str(direction)
+        orientation.append(second) 
+
+        #on l'ajoute a l'endroit le plus logique, on reorganisera après
+        openings=self.mainTree.find('.//skin[@id]/openings')
+        second=openings.find('./SECOND')
+        second.append(openingElement)
+        
+        transelem=self.mainTree.find('.//*[@id="'+openingtypeid+'"]')
+      
+        topeningslist=transelem.find('./openings/SECOND')
+        ET.SubElement(topeningslist, openingElement.tag, {'reference':openingElement.attrib['id']})
+      
+        openingtypeid = openingElement.find('transparentElement').find('SECOND').attrib['reference']
+        transelem=self.mainTree.find('.//*[@id="'+openingtypeid+'"]')
+        netSurface = transelem.find('netSurface')
+        
+        second = ET.Element('SECOND',{'class':'com.hemmis.mrw.pace.model.ObservableSpecProperty','id':'99999','v':'2'})
+        cstate = ET.Element('CURRENT__STATE',{'class':'java.math.BigDecimal'})
+        cstate.text = '0'
+        second.append(cstate)
+        netSurface.append(second)
+        
+
+        self.reorderIdsAndReferences()
+
+
+    def setOpeningAreaMod(self,openingName,modArea):
+
+        #defining changed status and change area for second situation
+        openingElement = self.findOpeningByName(openingName)
+        openingElement.find('./state').text='CHANGED'
+        
+        second = ET.Element('SECOND',{'class':"java.math.BigDecimal"})
+        second.text = str(modArea)
+        openingElement.find('./surface').append(second)
+
+
+        #find transparentElement and updat its surface
+        #remove it from transparent element list
+        openingtypeid = openingElement.find('transparentElement').find('INITIAL').attrib['reference']
+        transelem=self.mainTree.find('.//*[@id="'+openingtypeid+'"]')
+        netSurface = transelem.find('netSurface')
+        
+        second = ET.Element('SECOND',{'class':'com.hemmis.mrw.pace.model.ObservableSpecProperty','id':'99999','v':'2'})
+        cstate = ET.Element('CURRENT__STATE',{'class':'java.math.BigDecimal'})
+        cstate.text = '0'
+        
+        second.append(cstate)
+        netSurface.append(second)
+
+
+    def deleteOpeningMod(self,openingName):
+        
+        #defining changed status and change area for second situation
+        openingElement = self.findOpeningByName(openingName)
+        openingElement.find('./state').text='REMOVED'
+        openingID = openingElement.attrib['id']
+
+        #remove it from "opengigs" list
+        openings=self.mainTree.find('.//skin[@id]/openings')
+        secondOpeningsList = openings.find('SECOND')
+        elementToDelete = secondOpeningsList.find('*[@reference="'+openingID+'"]')
+        secondOpeningsList.remove(elementToDelete)
+
+        #remove it from transparent element list
+        openingtypeid = openingElement.find('transparentElement').find('INITIAL').attrib['reference']
+        transelem=self.mainTree.find('.//*[@id="'+openingtypeid+'"]')
+        secondOpeningsList = transelem.find('openings').find('SECOND') 
+        elementToDelete = secondOpeningsList.find('.//*[@reference="'+openingID+'"]')
+        secondOpeningsList.remove(elementToDelete)
+        
+                
+        
+    def changeOpeningsState(self,state):
+        
+        openingStateElem = self.mainTree.find('.//openingsState')
+        openingStateElem.text = 'CHANGED'
+
+        #ok, il faut changer le openingstate par programmation, sinion il y un bug quan don le modifie
+        
+        
 
 
 
@@ -1594,10 +1706,17 @@ def test4c(template,outputname):
     xml.setNetSurfaceMod('T2',62)
 
     
-    xml.addOpeningNetMethod('Ouverture 1','F1','N')  
-    xml.addOpeningNetMethod('Ouverture 2','F1','W')
-    xml.addOpeningNetMethod('Ouverture 3','F2','S')
+    xml.addOpeningNetMethod('Ouverture 1','F1','N',area=1.2)  
+    xml.addOpeningNetMethod('Ouverture 2','F1','W',area=1.3)
+    xml.addOpeningNetMethod('Ouverture 3','F2','S',area=1.4)
         
+    xml.changeOpeningsState('CHANGED')
+    xml.setOpeningAreaMod('Ouverture 1',3.14)
+    xml.deleteOpeningMod('Ouverture 2')    
+
+    xml.addOpeningNetMethodMod('Ouverture 4','F2','NW',area=1.707)
+
+    
     xml.setHeatedVolume(1000,1200)
     xml.addFloorLevel('Rez de chaussee',142,'init')
     xml.setInertia('MODERATE_HEAVY')
@@ -1726,10 +1845,10 @@ def main():
     test1(templateMazout,'testMazout')
 
     test1(templatePasdeChauffage,'testNoHeating')
-    
+    """    
     
     test6(template,'testWithTemplates')
-    """
+    
 
 
 if __name__ == "__main__":
