@@ -86,6 +86,19 @@ class PACEXML:
         except:
             print("error in set number of facades")
 
+
+    def setProcessorInfo(self,number,firstName,lastName,street,houseNumber,zipCode,city,country,email):
+        self.mainTree.find("processorNumber").text = number
+        self.mainTree.find("processorFirstName").text = firstName
+        self.mainTree.find("processorLastName").text = lastName
+        self.mainTree.find("processorStreet").text = street
+        self.mainTree.find("processorHousenr").text = houseNumber
+        self.mainTree.find("processorZipCode").text = zipCode
+        self.mainTree.find("processorCity").text = city
+        self.mainTree.find("processorCountry").text = country
+        self.mainTree.find("processorEMail").text = email
+
+
     def addSurfaces(self,surfacesList):    
         # methode des surfaces brutes
         
