@@ -207,7 +207,8 @@ class PACEXML:
         roofPlane.find('orientationManually').find('INITIAL').text="false"
        
         
-        self.setObjectGrossSurface(roofPlane,area,'INITIAL')        
+        self.setObjectGrossSurface(roofPlane,area,'INITIAL')
+        self.setObjectGrossSurface(roofPlane,area,'SECOND')
 
         
         roofPlane.find('slope').find('INITIAL').set('class',"java.math.BigDecimal")
@@ -355,15 +356,13 @@ class PACEXML:
 
 
     def setObjectGrossSurface(self,objectElement,area,situation):
+        if situation == 'INITIAL':
+            objectElement.find('heightManually').find(situation).text="false"
+            objectElement.find('widthManually').find(situation).text="false"
+            objectElement.find('grossSurfaceManually').find(situation).text='true'
 
-        objectElement.find('heightManually').find(situation).text="false"
-        objectElement.find('widthManually').find(situation).text="false"
-        objectElement.find('grossSurfaceManually').find(situation).text='true'
         objectElement.find('grossSurface').find(situation).text=str(area)
         objectElement.find('grossSurface').find(situation).set('class',"java.math.BigDecimal")
-        
-        
-        
 
 
     def getFloorPlaneArea(self,situation):
